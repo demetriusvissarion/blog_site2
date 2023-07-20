@@ -1,7 +1,12 @@
 <?php
 
-// This adds dynamic title tag support
-add_theme_support('title-tag');
+function blog_site2_theme_support()
+{
+	// This adds dynamic title tag support
+	add_theme_support('title-tag');
+};
+
+add_action('after_setup_theme', 'blog_site2_theme_support');
 
 function blog_site2_register_styles()
 {
