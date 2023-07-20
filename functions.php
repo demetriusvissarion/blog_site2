@@ -13,6 +13,10 @@ add_action('wp_enqueue_scripts', 'blog_site2_register_styles');
 
 function blog_site2_register_scripts()
 {
+	wp_enqueue_script('blog_site2-jquery', "https://code.jquery.com/jquery-3.4.1.slim.min.js", array(), '3.4.1', true);
+	wp_enqueue_script('blog_site2-popper', "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js", array(), '1.16.0', true);
+	wp_enqueue_script('blog_site2-bootstrap', "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js", array(), '4.4.1', true);
+	wp_enqueue_script('blog_site2-main', get_template_directory_uri() . "/wp-content/themes/blog_site2/assets/js/main.js", array(), '1.0', true);
 };
 
 add_action('wp_enqueue_scripts', 'blog_site2_register_scripts');
