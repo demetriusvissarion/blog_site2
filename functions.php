@@ -1,5 +1,8 @@
 <?php
 
+// This adds dynamic title tag support
+add_theme_support('title-tag');
+
 function blog_site2_register_styles()
 {
 	$version = wp_get_theme()->get('Version');
