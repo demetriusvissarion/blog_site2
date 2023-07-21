@@ -8,6 +8,18 @@ function blog_site2_theme_support()
 
 add_action('after_setup_theme', 'blog_site2_theme_support');
 
+function blog_site2_menus()
+{
+	$locations = array(
+		'primary' => "Desktop Primary Left Sidebar",
+		'footer' => "Footer menu Items"
+	);
+
+	register_nav_menus($locations);
+}
+
+add_action('init', 'blog_site2_menus');
+
 function blog_site2_register_styles()
 {
 	$version = wp_get_theme()->get('Version');
