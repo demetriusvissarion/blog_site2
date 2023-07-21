@@ -63,7 +63,7 @@ body {
   overflow-x: hidden;
 }
 a {
-  color: var(--pink);
+  color: var(--gray-dark);
 }
 h1,
 h2,
