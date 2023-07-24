@@ -43,3 +43,21 @@ function blog_site2_register_scripts()
 };
 
 add_action('wp_enqueue_scripts', 'blog_site2_register_scripts');
+
+
+// function blog_site2_widget_areas()
+// {
+// 	register_sidebar(
+// 		array(
+// 			'before_title' => '',
+// 			'after_title' => '',
+// 			'before_widget' => '<ul class="social-list list-inline py-3 mx-auto">',
+// 			'after_widget' => '</ul>',
+// 			'name' => 'Sidebar Area',
+// 			'id' => 'sidebar-1',
+// 			'description' => 'Sidebar Widget Area',
+// 		)
+// 	);
+// }
+
+// add_action('widgets_init', 'blog_site2_widget_areas');
